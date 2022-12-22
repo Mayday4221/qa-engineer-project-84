@@ -1,0 +1,30 @@
+---
+- summary: |
+    Кнопки "В корзину" расположены криво: не в один ряд
+  environment: |
+    Google Chrome   Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 7 Ultimate SP1
+  steps-to-reproduce: |
+    1. Зайти на страницу интернет-магазина https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Кнопки "В корзину" должны быть расположены ровно и в один ряд
+  actual-result: |
+    На странице ничего не происходит.
+    В консоли браузера в Devtools выводится почта
+
+- summary: |
+    Изменяется url в адресной строке браузера, не работают вкладки LOBBY/TOURNAMENT/COMPLETED GAMES
+  environment: |
+    Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Linux
+  steps-to-reproduce: |
+    1. Залогиниться в системе https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+    2. Переключить Лидерборд по сроку (месяц/неделя/за все время)
+    3. Переключить LOBBY/TOURNAMENT/COMPLETED GAMES
+  expected-result: |
+    url в адресной строке не меняется
+    Вкладки работают
+  actual-result: |
+    При нажатии на week,month,all в urlHash появляется '!'
+    Вкладки не работают.
+    Ошибка изображена на скриншоте assets/bug.png
