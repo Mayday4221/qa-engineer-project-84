@@ -5,12 +5,11 @@
     Google Chrome   Версия 108.0.5359.125 (Официальная сборка), (64 бит)
     ОС Windows 7 Ultimate SP1
   steps-to-reproduce: |
-    1. Зайти на страницу интернет-магазина https://hexlet-products-store.vercel.app/
+    Зайти на страницу интернет-магазина https://hexlet-products-store.vercel.app/
   expected-result: |
-    Кнопки "В корзину" должны быть расположены ровно и в один ряд
+    Кнопки "В корзину" должны быть расположены ровно и в один ряд (по 3 в ряду)
   actual-result: |
-    На странице ничего не происходит.
-    В консоли браузера в Devtools выводится почта
+    Кнопки "В корзину" расположены криво: не в один ряд (см. аттач. Primer 1.PNG)
 
 - summary: |
     Изменяется url в адресной строке браузера, не работают вкладки LOBBY/TOURNAMENT/COMPLETED GAMES
