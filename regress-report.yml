@@ -8,11 +8,11 @@ test-cases:
       Проверка русской локализации сайта
   status: fail
  
-   - summary: |
+  - summary: |
       Проверка корректной работы поиска по каталогу
   status: fail
     
-   - summary: |
+  - summary: |
       Проверка корректной работы поиска по минимальной цене
   status: fail
     
@@ -23,7 +23,7 @@ bugreports:
       Google Chrome   Версия 108.0.5359.125 (Официальная сборка), (64 бит)
       ОС Windows 7 Ultimate SP1
   steps-to-reproduce: |
-      Зайти на главную страницу интернет-магазина
+      - Зайти на главную страницу интернет-магазина
   expected-result: |
       Кнопки Add to cart располагаются ровно и не выходят за пределы верстки
   actual-result: |
@@ -35,7 +35,7 @@ bugreports:
       Google Chrome   Версия 108.0.5359.125 (Официальная сборка), (64 бит)
       ОС Windows 7 Ultimate SP1
   steps-to-reproduce: |
-      Переключить Language на Russian
+      - Переключить Language на Russian
   expected-result: |
       Нужна русская локализации в описании товаров
   actual-result: |
