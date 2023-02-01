@@ -2,19 +2,19 @@
 test-cases:
 - summary: |
     Проверка добавления товара в корзину
-   status: pass
+  status: pass
   
 - summary: |
     Проверка русской локализации сайта
-   status: fail
+  status: fail
   
 - summary: |
     Проверка корректной работы поиска по каталогу
-   status: fail
+  status: fail
   
 - summary: |
     Проверка корректной работы поиска по каталогу
-   status: fail
+  status: fail
    
 bugreports:
 - summary: |
