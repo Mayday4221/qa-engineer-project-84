@@ -1,91 +1,91 @@
 ---
 test-cases:
-  - summary: |
-      Проверка добавления товара в корзину
-    status: pass
-    
-  - summary: |
-      Проверка русской локализации сайта
-    status: fail
- 
-  - summary: |
-      Проверка корректной работы поиска по каталогу
-    status: fail
-    
-  - summary: |
-      Проверка корректной работы поиска по минимальной цене
-    status: fail
-    
+- summary: |
+    Проверка добавления товара в корзину
+  status: pass
+  
+- summary: |
+    Проверка русской локализации сайта
+  status: fail
+  
+- summary: |
+    Проверка корректной работы поиска по каталогу
+  status: fail
+  
+- summary: |
+    Проверка корректной работы поиска по каталогу
+   status: fail
+   
 bugreports:
-  - summary: |
-      Выходит за пределы верстки кнопка Add to cart в каталоге
-  environment: |
-      Google Chrome   Версия 108.0.5359.125 (Официальная сборка), (64 бит)
-      ОС Windows 7 Ultimate SP1
-  steps-to-reproduce: |
-      - Зайти на главную страницу интернет-магазина
-  expected-result: |
-      Кнопки Add to cart располагаются ровно и не выходят за пределы верстки
-  actual-result: |
-      Кнопка Add to cart в каталоге выходит за пределы верстки (см. аттач. Primer 1.PNG)
+- summary: |
+    Выходит за пределы верстки кнопка Add to cart в каталоге
+environment: |
+    Google Chrome   Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 7 Ultimate SP1
+steps-to-reproduce: |
+    Зайти на главную страницу интернет-магазина 
+expected-result: |
+    Кнопки Add to cart располагаются ровно и не выходят за пределы верстки
+actual-result: |
+    Кнопка Add to cart в каталоге выходит за пределы верстки (см. аттач. Primer 1.PNG)
     
-  - summary: |
+- summary: |
       Нет русской локализации в описании товаров
-  environment: |
+environment: |
       Google Chrome   Версия 108.0.5359.125 (Официальная сборка), (64 бит)
       ОС Windows 7 Ultimate SP1
-  steps-to-reproduce: |
+steps-to-reproduce: |
       - Переключить Language на Russian
-  expected-result: |
+expected-result: |
       Нужна русская локализации в описании товаров
-  actual-result: |
+actual-result: |
       Нет русской локализации в описании товаров.(см. аттач. Add cart.PNG)
-    
-  - summary: |
+      
+- summary: |
       Не отображается размер скидки в процентах на главной странице и в корзине товара.
-  environment: |
+environment: |
       Google Chrome   Версия 108.0.5359.125 (Официальная сборка), (64 бит)
       ОС Windows 7 Ultimate SP1
-  steps-to-reproduce: |
+steps-to-reproduce: |
       - Добавить товар в корзину
       - Открыть корзину
-  expected-result: |
+expected-result: |
       Размер скидки в процентах должен отображаться не только в карточке товара, но и на главной странице, и при добавлении товара в корзину.
-  actual-result: |
+actual-result: |
       Не отображается размер скидки в процентах на главной странице и в корзине товара. (см. аттач. Primer 3.PNG)
-    
-  - summary: |
+      
+- summary: |
       Нет пробелов между ценой на главной странице. 
-  environment: |
+environment: |
       Google Chrome   Версия 108.0.5359.125 (Официальная сборка), (64 бит)
       ОС Windows 7 Ultimate SP1
-  steps-to-reproduce: |
+steps-to-reproduce: |
       - Зайти на главную страницу интернет-магазина 
-  expected-result: |
+expected-result: |
       На главной странице должны стоять пробелы между ценой  
-  actual-result: |
+actual-result: |
       На главной странице не стоят пробелы между ценой (см. аттач. Primer 1.PNG)
-    
-  - summary: |
+      
+- summary: |
       Отрицательные значения позволяет выбрать фильтр по цене на главной странице. 
-  environment: |
+environment: |
       Google Chrome   Версия 108.0.5359.125 (Официальная сборка), (64 бит)
       ОС Windows 7 Ultimate SP1
-  steps-to-reproduce: |
+steps-to-reproduce: |
       - Проставить отрицательное значение в фильтр по цене товара
-  expected-result: |
+expected-result: |
       Отсутстие возможности ввода в фильтр по цене товара отрицательных значений 
-  actual-result: |
+actual-result: |
       Отрицательные значения позволяет ввести фильтр по цене на главной странице.
-    
-  - summary: |
+      
+- summary: |
       Некорректно работает поиск по каталогу
-  environment: |
+environment: |
       Google Chrome   Версия 108.0.5359.125 (Официальная сборка), (64 бит)
       ОС Windows 7 Ultimate SP1
-  steps-to-reproduce: |
+steps-to-reproduce: |
       - Ввести в окно поиска Apple
-  expected-result: |
+expected-result: |
       Должны отобразиться все продукты Apple из каталога интернет-магазина 
-  actual-result: |
+actual-result: |
       Поиск не находит продукты Apple из каталога интернет-магазина
