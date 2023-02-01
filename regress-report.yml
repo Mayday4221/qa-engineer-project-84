@@ -21,7 +21,7 @@ bugreports:
       Ошибка фильтрации товаров по цене 
     environment: |
       Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
-      OC Windows 10 Pro 21H2
+      OC Windows 7 Ultimate SP1
     steps-to-reproduce: |
       1. В поле цена указать от 1 до 12
     expected-result: |
